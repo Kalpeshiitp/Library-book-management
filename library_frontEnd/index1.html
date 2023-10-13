@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <h2>Library Books's Management</h2>
+    <input
+      id="bookTitle"
+      type="text"
+      required
+      placeholder="Enter the book name"
+    />
+    <button id="takeBook" type="submit" onclick="postBook(event)">
+      Take Book
+    </button>
+
+    <div id="bookList"></div>
+    <h2>Returned Book</h2>
+    <div id="returnedBooks"></div>
+
+    <script src="script.js"> </script>
+  </body>
+</html>
